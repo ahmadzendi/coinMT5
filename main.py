@@ -8,8 +8,8 @@ from datetime import datetime
 from telegram import Update, Bot
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TOKEN_BOT = "8352791002:AAFk5vrlDoj7FTLYlXWnpx4e7lfdVJxTiRs"
-CHAT_ID = "-1002922643813"
+TOKEN_BOT = os.environ.get("TOKEN_BOT")
+CHAT_ID = os.environ.get("CHAT_ID")
 CHECK_INTERVAL = 1
 MT_STATUS_FILE = "mt_status.json"
 EXCLUDE_FILE = "exclude.json"
