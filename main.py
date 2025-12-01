@@ -97,6 +97,18 @@ async def maintenance_loop():
             print(f"❌ Error: {e}")
         await asyncio.sleep(CHECK_INTERVAL)
 
+async def send_long_message(update, text):
+    max_length = 4096
+    lines = text.split('\n')
+    chunk = ""
+    for line in lines:
+        if len(chunk) + len(line) + 1 > max_length:
+            await update.message.reply_text(chunk)
+            chunk = ""
+        chunk += line + "\n"
+    if chunk:
+        await update.message.reply_text(chunk)
+
 async def maintenance_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not os.path.exists(MT_STATUS_FILE):
         await update.message.reply_text("Belum ada data maintenance. Jalankan monitor dulu.")
@@ -116,7 +128,7 @@ async def maintenance_command(update: Update, context: ContextTypes.DEFAULT_TYPE
     for nomor, (symbol, since) in enumerate(koin_mt, 1):
         symbol_name = mt_last[symbol].get("description", symbol.upper())
         pesan += f"{nomor}. {symbol_name} (sejak {since})\n"
-    await update.message.reply_text(pesan)
+    await send_long_message(update, pesan)
 
 async def data_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     exclude_set = load_exclude()
