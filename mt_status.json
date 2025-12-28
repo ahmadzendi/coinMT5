@@ -1,28 +1,8 @@
 {
-  "algoidr": {
-    "status": 1,
-    "since": "2025-09-26 09:19:04",
-    "description": "ALGO/IDR"
-  },
   "bcdidr": {
     "status": 1,
     "since": "1945-08-17 10:00:00",
     "description": "BCD/IDR"
-  },
-  "celoidr": {
-    "status": 1,
-    "since": "2025-11-25 18:45:12",
-    "description": "CELO/IDR"
-  },
-  "ckbidr": {
-    "status": 1,
-    "since": "1945-08-17 10:00:00",
-    "description": "CKB/IDR"
-  },
-  "dotidr": {
-    "status": 1,
-    "since": "2025-11-04 14:08:03",
-    "description": "DOT/IDR"
   },
   "gxcidr": {
     "status": 1,
@@ -31,7 +11,7 @@
   },
   "hiveidr": {
     "status": 1,
-    "since": "2025-11-18 20:04:00",
+    "since": "2025-12-23 15:42:13",
     "description": "HIVE/IDR"
   },
   "iotaidr": {
@@ -39,39 +19,14 @@
     "since": "1945-08-17 10:00:00",
     "description": "IOTA/IDR"
   },
-  "ksmidr": {
-    "status": 1,
-    "since": "2025-10-07 14:01:42",
-    "description": "KSM/IDR"
-  },
   "mtlidr": {
     "status": 1,
     "since": "1945-08-17 10:00:00",
     "description": "MTL/IDR"
   },
-  "ontidr": {
-    "status": 1,
-    "since": "2025-12-01 08:07:03",
-    "description": "ONT/IDR"
-  },
   "slerfidr": {
     "status": 1,
     "since": "2025-09-29 15:56:11",
     "description": "SLERF/IDR"
-  },
-  "tiaidr": {
-    "status": 1,
-    "since": "2025-11-24 18:03:28",
-    "description": "TIA/IDR"
-  },
-  "vetidr": {
-    "status": 1,
-    "since": "2025-11-26 11:00:06",
-    "description": "VET/IDR"
-  },
-  "vsysidr": {
-    "status": 1,
-    "since": "1945-08-17 10:00:00",
-    "description": "VSYS/IDR"
   }
 }
