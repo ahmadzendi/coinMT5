@@ -9,24 +9,14 @@
     "since": "1945-08-17 10:00:00",
     "description": "GXC/IDR"
   },
-  "hiveidr": {
-    "status": 1,
-    "since": "2025-12-23 15:42:13",
-    "description": "HIVE/IDR"
-  },
-  "iotaidr": {
-    "status": 1,
-    "since": "1945-08-17 10:00:00",
-    "description": "IOTA/IDR"
-  },
   "mtlidr": {
     "status": 1,
     "since": "1945-08-17 10:00:00",
     "description": "MTL/IDR"
   },
-  "slerfidr": {
+  "xdcidr": {
     "status": 1,
-    "since": "2025-09-29 15:56:11",
-    "description": "SLERF/IDR"
+    "since": "2026-01-28 14:33:55",
+    "description": "XDC/IDR"
   }
 }
